@@ -28,7 +28,7 @@ public class enemylogic : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(new Vector3(0, speedenemy, 0f));
+        transform.Translate(new Vector3(0, speedenemy * PlayerPrefs.GetFloat("speedCoeff"), 0f));
         if (timer < 0)
         {
             timer = speedreset;

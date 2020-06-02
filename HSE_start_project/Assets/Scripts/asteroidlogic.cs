@@ -10,7 +10,7 @@ public class asteroidlogic : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(new Vector3(0, speedasteroid, 0f));
+        transform.Translate(new Vector3(0, speedasteroid * PlayerPrefs.GetFloat("speedCoeff"), 0f));
     }
 
     void OnTriggerEnter2D(Collider2D col)

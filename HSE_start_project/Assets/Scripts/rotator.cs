@@ -15,6 +15,6 @@ public class rotator : MonoBehaviour
 
     void Update()
     {
-        transform.rotation *= Quaternion.AngleAxis(f, new Vector3(0, 0, 1));
+        transform.rotation *= Quaternion.AngleAxis(f, new Vector3(0, 0, 1 * PlayerPrefs.GetFloat("speedCoeff")));
     }
 }
