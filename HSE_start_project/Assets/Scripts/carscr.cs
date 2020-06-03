@@ -111,13 +111,13 @@ public class carscr : MonoBehaviour
         if (col.tag == "coin")
         {
             PlayerPrefs.SetInt("tempScore",PlayerPrefs.GetInt("tempScore")+10);
+            PlayerPrefs.SetInt("coinsCount", PlayerPrefs.GetInt("coinsCount") + 1);
             Destroy(col.gameObject);
         }
         
         if (col.gameObject.tag == "Enemy" && !gun3)
         {
             Instantiate(explosionplayer, transform.position, transform.rotation);
-            Destroy(col.gameObject);
             Destroy(gameObject);
         }
     }

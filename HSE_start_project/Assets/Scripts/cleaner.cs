@@ -9,14 +9,11 @@ public class cleaner : MonoBehaviour
     void Start()
     {
         text = GetComponentInChildren<TextMeshProUGUI>();
-    }
-
-    void Update()
-    {
-        text.text = "Score "+PlayerPrefs.GetInt("score").ToString();
+        text.text = "Score " + PlayerPrefs.GetInt("score").ToString();
     }
     public void Clear()
     {
         PlayerPrefs.SetInt("score", 0);
+        text.text = "Score " + PlayerPrefs.GetInt("score").ToString();
     }
 }

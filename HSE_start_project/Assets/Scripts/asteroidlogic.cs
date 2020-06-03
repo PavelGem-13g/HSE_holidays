@@ -22,5 +22,11 @@ public class asteroidlogic : MonoBehaviour
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+        if (col.tag == "Player")
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
+            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 1);
+            Destroy(gameObject);
+        }
     }
 }

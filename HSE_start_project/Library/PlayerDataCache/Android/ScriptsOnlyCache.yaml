@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - DestroyAsteroid
     - Exit
+    - Unpause
     - activemenu
     - asteroidlogic
     - blockgenerator
@@ -79,7 +80,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 9708}
+    - Class: 114
       Script: {instanceID: 9946}
+    - Class: 114
+      Script: {instanceID: 9956}
     - Class: 114
       Script: {instanceID: 10104}
     - Class: 114
@@ -87,21 +92,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10414}
     - Class: 114
+      Script: {instanceID: 10420}
+    - Class: 114
       Script: {instanceID: 10490}
     - Class: 114
       Script: {instanceID: 10662}
     - Class: 114
       Script: {instanceID: 10836}
     - Class: 114
-      Script: {instanceID: 10962}
+      Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 10998}
+      Script: {instanceID: 10882}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 10964}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11278}
+    - Class: 114
+      Script: {instanceID: 11334}
+    - Class: 114
+      Script: {instanceID: 11356}
+    - Class: 114
+      Script: {instanceID: 11446}
+    - Class: 114
+      Script: {instanceID: 11734}
+    - Class: 114
+      Script: {instanceID: 11902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -113,6 +130,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/levels.unity:
     - Class: 1
@@ -140,17 +163,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11138}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -219,27 +242,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11138}
     - Class: 114
-      Script: {instanceID: 11154}
+      Script: {instanceID: 11156}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11174}
     - Class: 114
-      Script: {instanceID: 11322}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11782}
     - Class: 114
-      Script: {instanceID: 21172}
+      Script: {instanceID: 11902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -284,17 +307,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11138}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -337,7 +360,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 9708}
+    - Class: 114
       Script: {instanceID: 9946}
+    - Class: 114
+      Script: {instanceID: 9956}
     - Class: 114
       Script: {instanceID: 10104}
     - Class: 114
@@ -345,21 +372,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10414}
     - Class: 114
+      Script: {instanceID: 10420}
+    - Class: 114
       Script: {instanceID: 10490}
     - Class: 114
       Script: {instanceID: 10662}
     - Class: 114
       Script: {instanceID: 10836}
     - Class: 114
-      Script: {instanceID: 10962}
+      Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 10998}
+      Script: {instanceID: 10882}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 10964}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11278}
+    - Class: 114
+      Script: {instanceID: 11334}
+    - Class: 114
+      Script: {instanceID: 11356}
+    - Class: 114
+      Script: {instanceID: 11446}
+    - Class: 114
+      Script: {instanceID: 11734}
+    - Class: 114
+      Script: {instanceID: 11902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -371,6 +410,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -525,13 +570,13 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+      Hash: 94b39e5d40d9dc8b56c2343590a9d59b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Exit
   - hash:
       serializedVersion: 2
-      Hash: 02cc83817c0a711b60cf60ccd9d071a3
+      Hash: 1f6306172c34570aa055c9ef13eea914
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: carscr
@@ -765,6 +810,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 843953032fcf03e9eeb2a28d6f7816ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Unpause
+  - hash:
+      serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -871,6 +922,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextSelector_A
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: cleaner
   - hash:
       serializedVersion: 2
       Hash: 318c6c13a19c9fac98135ae14889de1b
@@ -1177,12 +1234,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: cleaner
   platform: 13
   scenePathNames:
   - Assets/Scenes/menu.unity

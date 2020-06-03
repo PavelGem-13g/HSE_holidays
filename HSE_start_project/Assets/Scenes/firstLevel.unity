@@ -735,7 +735,7 @@ PrefabInstance:
     - target: {fileID: 1570104073476350353, guid: a4603d1a35871334c8f9e0a41e038f36,
         type: 3}
       propertyPath: m_Name
-      value: Panel
+      value: Pause
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4603d1a35871334c8f9e0a41e038f36, type: 3}
