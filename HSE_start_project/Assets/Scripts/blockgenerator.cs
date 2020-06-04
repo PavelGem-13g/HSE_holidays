@@ -5,8 +5,8 @@ using UnityEngine;
 public class blockgenerator : MonoBehaviour
 {
     public GameObject asteroid;
-    float timer=0;
-    float timerespawn = 0.5f;
+    public float timer =0;
+    public float timerespawn = 0.5f;
 
     void Start()
     {

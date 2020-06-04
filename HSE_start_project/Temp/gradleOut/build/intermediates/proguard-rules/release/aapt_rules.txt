@@ -1,2 +1,0 @@
-# Referenced at D:\AndroidProj\HSE_start_project\Temp\gradleOut\build\intermediates\merged_manifests\release\AndroidManifest.xml:43
--keep class com.unity3d.player.UnityPlayerActivity { <init>(); }

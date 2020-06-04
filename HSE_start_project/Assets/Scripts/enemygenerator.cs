@@ -5,8 +5,8 @@ public class enemygenerator : MonoBehaviour
 {
 
     public GameObject enemy;
-    float speedreset = 2f;
-    float timer=1f;
+    public float speedreset = 2f;
+    public float timer =1f;
 
     void Start()
     {
