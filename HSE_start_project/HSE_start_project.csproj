@@ -648,9 +648,9 @@
     <Compile Include="Assets\Scripts\activemenu.cs" />
     <Compile Include="Assets\Scripts\asteroidlogic.cs" />
     <Compile Include="Assets\Scripts\blockgenerator.cs" />
-    <Compile Include="Assets\Scripts\carcontroller.cs" />
     <Compile Include="Assets\Scripts\carscr.cs" />
     <Compile Include="Assets\Scripts\cleaner.cs" />
+    <Compile Include="Assets\Scripts\CoinsScr.cs" />
     <Compile Include="Assets\Scripts\DestroyAsteroid.cs" />
     <Compile Include="Assets\Scripts\enemygenerator.cs" />
     <Compile Include="Assets\Scripts\enemylogic.cs" />
@@ -661,6 +661,7 @@
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\rotator.cs" />
     <Compile Include="Assets\Scripts\systemcontrolobjects.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Unpause.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
