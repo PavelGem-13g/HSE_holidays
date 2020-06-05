@@ -44,7 +44,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -53,7 +52,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/Scenes/firstLevel.unity:
@@ -1357,4 +1355,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/secondLevel.unity
   - Assets/Scenes/rules.unity
   - Assets/Scenes/thirdLevel.unity
-  playerPath: D:/AndroidProj/HSE_start_project/Builds/Android_builds/_2.apk
+  playerPath: D:/AndroidProj/HSE_start_project/Builds/Android_builds/Android_build.apk

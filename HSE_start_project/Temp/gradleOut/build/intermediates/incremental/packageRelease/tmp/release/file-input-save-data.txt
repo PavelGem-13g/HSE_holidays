@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jun 04 15:58:47 MSK 2020
+#Fri Jun 05 15:30:09 MSK 2020
 60.set=ASSET
 52.set=ASSET
 53.base=D\:\\AndroidProj\\HSE_start_project\\Temp\\gradleOut\\build\\intermediates\\merged_assets\\release\\out

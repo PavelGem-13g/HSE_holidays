@@ -89,7 +89,7 @@ public class carscr : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Handheld.Vibrate();
+        //Handheld.Vibrate();
 
         if (col.tag == "gunbonous")
         {

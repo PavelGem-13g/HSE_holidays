@@ -53,7 +53,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/Scenes/firstLevel.unity:
@@ -1357,4 +1356,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/secondLevel.unity
   - Assets/Scenes/rules.unity
   - Assets/Scenes/thirdLevel.unity
-  playerPath: D:/AndroidProj/HSE_start_project/Builds/Windows_builds/2/HSE_start_project.exe
+  playerPath: D:/AndroidProj/HSE_start_project/Builds/Windows_builds/Windows_build/HSE_start_project.exe
