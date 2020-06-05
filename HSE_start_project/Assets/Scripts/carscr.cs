@@ -120,5 +120,9 @@ public class carscr : MonoBehaviour
             Instantiate(explosionplayer, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+        if (col.gameObject.tag == "Enemy" && gun3)
+        {
+            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 6);
+        }
     }
 }
