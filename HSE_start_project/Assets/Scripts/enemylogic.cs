@@ -41,13 +41,13 @@ public class enemylogic : MonoBehaviour
 
         if (col.tag == "Player")
         {
-            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 5);
+            Memory.Set_TempScore(Memory.Get_TempScore() + 5);
             Instantiate(explosionenemy, transform.position, transform.rotation);
             Destroy(gameObject);
         }
         if (col.tag == "laser")
         {
-            PlayerPrefs.SetInt("score",PlayerPrefs.GetInt("score")+3);
+            Memory.Set_TempScore(Memory.Get_TempScore() + 3);
             if (Random.Range(0, 5) == 0)
             {
                 Instantiate(gunactivator2, transform.position, transform.rotation);

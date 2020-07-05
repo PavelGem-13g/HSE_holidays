@@ -480,6 +480,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4885129861594547202, guid: b4f14f08742aa2b498d180d94109a1ee,
+        type: 3}
+      propertyPath: timer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7275828960642295088, guid: b4f14f08742aa2b498d180d94109a1ee,
         type: 3}
       propertyPath: m_Name

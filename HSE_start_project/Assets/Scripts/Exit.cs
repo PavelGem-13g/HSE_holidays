@@ -20,20 +20,18 @@ public class Exit : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            if (PlayerPrefs.GetInt("tempScore") > PlayerPrefs.GetInt("score"))
+            if (Memory.Get_TempScore() > Memory.Get_Score())
             {
-                PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("tempScore"));
+                Memory.Set_Score(Memory.Get_TempScore());
             }
-            //PlayerPrefs.SetFloat("speedCoeff", 0f);
-            //SceneManager.LoadScene(1);
             isPause = true;
             pause.SetActive(true);
         }
         if (target==null)
         {
-            if (PlayerPrefs.GetInt("tempScore") > PlayerPrefs.GetInt("score"))
+            if (Memory.Get_TempScore() > Memory.Get_Score())
             {
-                PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("tempScore"));
+                Memory.Set_Score(Memory.Get_TempScore());
             }
             timer = timer - Time.deltaTime;
             if (timer < 0)

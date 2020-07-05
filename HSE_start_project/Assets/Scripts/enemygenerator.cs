@@ -3,10 +3,9 @@ using System.Collections;
 
 public class enemygenerator : MonoBehaviour
 {
-
     public GameObject enemy;
     public float speedreset = 2f;
-    public float timer =1f;
+    public float timer;
 
     void Start()
     {
@@ -15,7 +14,7 @@ public class enemygenerator : MonoBehaviour
 
     void Update()
     {
-        timer = timer - Time.deltaTime * PlayerPrefs.GetFloat("speedCoeff");
+        timer = timer - Time.deltaTime * Memory.Get_Speed();
         if (timer <= 0)
         {
             Instantiate(enemy, new Vector3(Random.Range(-2.5f, 2.5f), 5.5f), transform.rotation);

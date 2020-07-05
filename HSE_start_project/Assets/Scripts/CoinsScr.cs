@@ -8,12 +8,12 @@ public class CoinsScr : MonoBehaviour
     TextMeshProUGUI text;
     void Start()
     {
-        PlayerPrefs.SetInt("coinsCount",0);
+        Memory.Set_Coin(0);
         text = GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
     {
-        text.text = "Coins: " + PlayerPrefs.GetInt("coinsCount");
+        text.text = "Coins: " + Memory.Get_Coin();
     }
 }

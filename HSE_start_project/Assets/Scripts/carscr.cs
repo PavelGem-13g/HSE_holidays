@@ -7,7 +7,6 @@ public class carscr : MonoBehaviour
     public GameObject laser3x;
     public GameObject explosionplayer;
     public GameObject pause;
-
     float x, y, z, x1, y1;
     bool trigtime = false;
     public float speedreset = 0.25f;
@@ -24,21 +23,16 @@ public class carscr : MonoBehaviour
         timer = speedreset;
         y = laser.transform.position.y;
         z = laser.transform.position.z;
-        PlayerPrefs.SetFloat("speedCoeff", 1f);
+        Memory.Set_Speed(1f);
         
     }
 
     public void Update()
     {
-        if (timer < 0)
-        {
-            timer = speedreset;
-            trigtime = false;
-        }
-
+        Gun_Reseter();
         if (Input.GetMouseButton(0) && !FindObjectOfType<Exit>().isPause)
         {
-            PlayerPrefs.SetFloat("speedCoeff", 1f);
+            Memory.Set_Speed(1f);
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0.5f, 10);
             if (timer == speedreset)
             {
@@ -79,13 +73,23 @@ public class carscr : MonoBehaviour
         }
         else if(FindObjectOfType<Exit>().isPause)
         {
-            PlayerPrefs.SetFloat("speedCoeff", 0f);
+            Memory.Set_Speed(0f);
         }
         else
         {
-            PlayerPrefs.SetFloat("speedCoeff", 0.3f);
+            Memory.Set_Speed(0.3f);
         }
     }
+    private void Gun_Reseter()
+    {
+        if (timer < 0)
+        {
+            timer = speedreset;
+            trigtime = false;
+        }
+    }
+
+    
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -105,13 +109,12 @@ public class carscr : MonoBehaviour
             gun2 = false;
             gun3 = true;
             guncount = 50;
-            
             Destroy(col.gameObject);
         }
         if (col.tag == "coin")
         {
-            PlayerPrefs.SetInt("tempScore",PlayerPrefs.GetInt("tempScore")+10);
-            PlayerPrefs.SetInt("coinsCount", PlayerPrefs.GetInt("coinsCount") + 1);
+            Memory.Set_TempScore(Memory.Get_TempScore() + 10);
+            Memory.Set_Coin(Memory.Get_Coin() + 1);
             Destroy(col.gameObject);
         }
         
@@ -119,10 +122,6 @@ public class carscr : MonoBehaviour
         {
             Instantiate(explosionplayer, transform.position, transform.rotation);
             Destroy(gameObject);
-        }
-        if (col.gameObject.tag == "Enemy" && gun3)
-        {
-            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 6);
         }
     }
 }

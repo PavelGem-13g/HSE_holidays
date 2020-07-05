@@ -10,7 +10,7 @@ public class asteroidlogic : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(new Vector3(0, speedasteroid * PlayerPrefs.GetFloat("speedCoeff"), 0f));
+        transform.Translate(new Vector3(0, speedasteroid * Memory.Get_Speed(), 0f));
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -18,14 +18,14 @@ public class asteroidlogic : MonoBehaviour
         if (col.tag == "laser") 
         {
             Destroy(col.gameObject);//Удаляем сам выстрел 
-            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 1);
+            Memory.Set_TempScore(Memory.Get_TempScore()+1);
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
         if (col.tag == "Player")
         {
             Instantiate(explosion, transform.position, transform.rotation);
-            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 1);
+            Memory.Set_TempScore(Memory.Get_TempScore() + 1);
             Destroy(gameObject);
         }
     }

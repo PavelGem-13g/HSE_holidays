@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     {
         if (!FindObjectOfType<Exit>().isPause && player != null)
         {
-            realTime += Time.deltaTime * PlayerPrefs.GetFloat("speedCoeff");
+            realTime += Time.deltaTime * Memory.Get_Speed();
         }
         seconds = Mathf.RoundToInt(realTime);
         
@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
             minutes += 1;
             seconds = 0;
             realTime = 0f;
-            PlayerPrefs.SetInt("tempScore", PlayerPrefs.GetInt("tempScore") + 100);
+            Memory.Set_TempScore(Memory.Get_TempScore() + 100);
         }
         if (minutes < 10)
         {

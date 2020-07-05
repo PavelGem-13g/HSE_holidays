@@ -6,7 +6,7 @@ public class menu : MonoBehaviour
     string score;
     void Start()
     {
-        score = PlayerPrefs.GetInt("score").ToString();
+        score = Memory.Get_Score().ToString();
     }
 
     void OnGUI()
